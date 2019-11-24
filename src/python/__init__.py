@@ -273,15 +273,12 @@ matrix_repr   = printing.matrix_repr_default
 spmatrix_str  = printing.spmatrix_str_default
 spmatrix_repr = printing.spmatrix_repr_default
 
-from cvxopt.base import matrix, spmatrix, sparse, spdiag, sqrt, sin, cos, \
-    exp, log
+from cvxoptklu.base import matrix, spmatrix, sparse, spdiag
 
 from cvxopt import solvers, blas, lapack
 
-__all__ = [ 'blas', 'lapack', 'amd', 'umfpack', 'klu', 'cholmod', 'solvers',
-    'modeling', 'printing', 'info', 'matrix', 'spmatrix', 'sparse', 
-    'spdiag', 'sqrt', 'sin', 'cos', 'exp', 'log', 'min', 'max', 'mul', 
-    'div', 'normal', 'uniform', 'setseed', 'getseed' ]
+__all__ = [ 'blas', 'lapack', 'umfpack', 'klu', 'matrix', 'spmatrix', 'sparse',
+    'spdiag' ]
 
 from ._version import get_versions
 __version__ = get_versions()['version']
